@@ -1,0 +1,48 @@
+const nomorWA = "6281377490373; // isi nomor kamu
+
+const products = [
+    {
+        nama: "Akun PB Rank Major",
+        rank: "Major",
+        item: "AUG, Kriss S.V, P90 Ext",
+        harga: 150000,
+        gambar: "akun1.jpg"
+    },
+    {
+        nama: "Akun PB Rank Colonel",
+        rank: "Colonel",
+        item: "AK47 Gold, Sniper Permanent",
+        harga: 250000,
+        gambar: "akun2.jpg"
+    },
+    {
+        nama: "Akun PB Rank 2nd Lieutenant",
+        rank: "2nd Lieutenant",
+        item: "Shotgun + SMG Permanent",
+        harga: 90000,
+        gambar: "akun3.jpg"
+    }
+    // kamu bisa tambah sebanyak yang kamu mau
+];
+
+const container = document.getElementById("productList");
+
+products.forEach(acc => {
+    container.innerHTML += `
+        <div class="product-card">
+            <img src="${acc.gambar}" alt="${acc.nama}">
+            <h3>${acc.nama}</h3>
+            <ul>
+                <li>Rank: <b>${acc.rank}</b></li>
+                <li>Item: <b>${acc.item}</b></li>
+            </ul>
+            <div class="price">Rp ${acc.harga.toLocaleString()}</div>
+            <a 
+                class="btn-buy" 
+                href="https://wa.me/${nomorWA}?text=Halo%20min,%20saya%20ingin%20beli%20${acc.nama}"
+                target="_blank">
+                Beli via WhatsApp
+            </a>
+        </div>
+    `;
+});

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katalog Akun Point Blank</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="hero">
+        <h1>Jual Banyak Akun Point Blank</h1>
+        <p>Pilih akun sesuai kebutuhanmu. Stok lengkap, harga terjangkau, aman dan terpercaya.</p>
+    </header>
+
+    <!-- KATALOG -->
+    <section class="catalog">
+        <h2>Daftar Akun Point Blank</h2>
+        <div class="product-grid" id="productList">
+            <!-- Produk akan ditampilkan dari JavaScript -->
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Jual Akun Point Blank • Semua hak dilindungi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
